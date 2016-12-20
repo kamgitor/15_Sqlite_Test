@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.0" name="Sqlite_Test.exe" publicKeyToken="8d79b407c1d6adc5" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Sqlite_Test" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Sqlite_Test.exe" parameters="" />
+    <hostInBrowser xmlns="urn:schemas-microsoft-com:asm.v3" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site">
+          <IPermission class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Access="Open" />
+          <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Allowed="ApplicationIsolationByUser" UserQuota="512000" />
+          <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="Execution" />
+          <IPermission class="System.Security.Permissions.UIPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Window="SafeTopLevelWindows" Clipboard="OwnClipboard" />
+          <IPermission class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="1" Level="SafePrinting" />
+          <IPermission class="System.Security.Permissions.MediaPermission, WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1" Audio="SafeAudio" Video="SafeVideo" Image="SafeImage" />
+          <IPermission class="System.Security.Permissions.WebBrowserPermission, WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1" Level="Safe" />
+        </PermissionSet>
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.104.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="x86" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sqlite_Test.exe" size="7168">
+      <assemblyIdentity name="Sqlite_Test" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>qVZ6cvjrhQ7cPUvZh+tBq8G6bkA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Baza.s3db" size="2048">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0NmzbUiw0AK2LgxbjPEYkNuewaI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Kamil-Nowak\Kamil" issuerKeyHash="f5c7c7df96ea557356f9cdf9b37ced916acf5b3a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>wLXknH80fIfTnkd10AdodRYxp44=</DigestValue></Reference></SignedInfo><SignatureValue>CK3AeHVeSxl5r/QhlmeBOH6ZzD3+gyKhcTPFHI9XYfspDzdn1NuS86m/2neenuShTXRlV9vwevPjNmmzt8dBKK/1ANdBmPNRpXclVIjIRbiihvf5+naw9LW0Fnk0eErK57mMcsEvcl0VMS30Ebq1TP9jBt2Xc7sYaEPvLt/5Ths=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qPpe6OIMmICMJLY9cJ+X9dc14Hd3wFU1jue9FlqxhSJ0/ReyIb54JKmi2RPh8Y1UtidGTDVgRtjq+Pl9Zcz5EnoILohDhKYL5mX2j10/I9uS1lILO/O1s1HKvZKHB84Y6w3Ns2pR4BbJhrpIAQJmVq8DyIrWhYt6CMQmMGQ2/qE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8ea73116756807d075479ed3877c347f9ce4b5c0" Description="" Url=""><as:assemblyIdentity version="1.0.0.0" name="Sqlite_Test.exe" publicKeyToken="8d79b407c1d6adc5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Kamil-Nowak\Kamil</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XAockhHoTyxn9KJHRbnZ5mLTQ/M=</DigestValue></Reference></SignedInfo><SignatureValue>fOCBt6RqcrA3EfxdLPhGi4Rim/H5tH1oa6GjsY0nMgilXRVzNqsw7eFUU1cNscO5RC0i02o34tHco3246kY0WiJwHKKuQ52wYu2ROD2qG+CsjUlcjoVKEqaZt+ERDhrl7O9juybDqOWdgn/79zPtkcyZ6KO9VSE0uiR9A6/ghWU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qPpe6OIMmICMJLY9cJ+X9dc14Hd3wFU1jue9FlqxhSJ0/ReyIb54JKmi2RPh8Y1UtidGTDVgRtjq+Pl9Zcz5EnoILohDhKYL5mX2j10/I9uS1lILO/O1s1HKvZKHB84Y6w3Ns2pR4BbJhrpIAQJmVq8DyIrWhYt6CMQmMGQ2/qE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQWjKGO/uEJbZKNCbsFR/9hzANBgkqhkiG9w0BAQUFADAtMSswKQYDVQQDHiIASwBhAG0AaQBsAC0ATgBvAHcAYQBrAFwASwBhAG0AaQBsMB4XDTE2MTIyMDEyNTI0NloXDTE3MTIyMDE4NTI0NlowLTErMCkGA1UEAx4iAEsAYQBtAGkAbAAtAE4AbwB3AGEAawBcAEsAYQBtAGkAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAqPpe6OIMmICMJLY9cJ+X9dc14Hd3wFU1jue9FlqxhSJ0/ReyIb54JKmi2RPh8Y1UtidGTDVgRtjq+Pl9Zcz5EnoILohDhKYL5mX2j10/I9uS1lILO/O1s1HKvZKHB84Y6w3Ns2pR4BbJhrpIAQJmVq8DyIrWhYt6CMQmMGQ2/qECAwEAATANBgkqhkiG9w0BAQUFAAOBgQAFKE6V7otVpotAAAnL+IVi2vGW8QG9Y1CH45JXrlTvIFQVGk2xw0sfrMtGTv4i+KGE2RL6pLebrpPgb08RKSswu0WnPi70ZN7MBvcGPbaXxX8rGea7uF5peXhkfjhT/MxSF9dLF5F8v2Y/C1RjngbLQUBK8EL5F/tJnoCJnNY2bw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
