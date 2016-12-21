@@ -1,4 +1,7 @@
 
+sqlite - c#
+http://blog.tigrangasparian.com/2012/02/09/getting-started-with-sqlite-in-c-part-one/
+
 
 http://www.altcontroldelete.pl/artykuly/c-wpf-oraz-sqlite-razem-w-jednym-projekcie/
 

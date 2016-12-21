@@ -1,0 +1,13 @@
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\bin\Debug\Sqlite_Test.exe
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\bin\Debug\Sqlite_Test.pdb
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\ResolveAssemblyReference.cache
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Window1.baml
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Window1.g.cs
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\App.g.cs
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Sqlite_Test_Content.g.cs
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Sqlite_Test_MarkupCompile.cache
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Sqlite_Test.g.resources
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Sqlite_Test.Properties.Resources.resources
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Sqlite_Test.csproj.GenerateResource.Cache
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Sqlite_Test.exe
+K:\ProjektyC#\15_Sqlite_Test\Sqlite_Test\Sqlite_Test\obj\Debug\Sqlite_Test.pdb
