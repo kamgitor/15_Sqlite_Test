@@ -38,6 +38,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite">
       <HintPath>SQLite\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

@@ -1,0 +1,14 @@
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\bin\Debug\Baza.s3db
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\bin\Debug\SqLite_App.exe
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\bin\Debug\SqLite_App.pdb
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\Window1.baml
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\Window1.g.cs
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\App.g.cs
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\SqLite_App_Content.g.cs
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\SqLite_App_MarkupCompile.cache
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\SqLite_App.g.resources
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\SqLite_App.Properties.Resources.resources
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\SqLite_App.csproj.GenerateResource.Cache
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\SqLite_App.exe
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\SqLite_App.pdb
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Debug\SqLite_App.csprojResolveAssemblyReference.cache

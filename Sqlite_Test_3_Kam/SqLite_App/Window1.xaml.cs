@@ -12,6 +12,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+// using System.Data.SQLite;
+
 namespace SqLite_App
 {
     /// <summary>
@@ -24,9 +26,11 @@ namespace SqLite_App
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            // SQLiteConnection.CreateFile("Baza.s3db");
         }
+
     }
 }
