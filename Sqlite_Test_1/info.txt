@@ -1,0 +1,3 @@
+
+probuje dzialac
+http://stackoverflow.com/questions/7685718/how-to-add-dll-in-c-sharp-project
