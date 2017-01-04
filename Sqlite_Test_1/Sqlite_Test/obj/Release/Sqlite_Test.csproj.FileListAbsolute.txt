@@ -22,3 +22,14 @@ F:\Robocze\!Visual C#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlit
 F:\Robocze\!Visual C#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test.csproj.GenerateResource.Cache
 F:\Robocze\!Visual C#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test.exe
 F:\Robocze\!Visual C#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test.pdb
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test.exe
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test.pdb
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\ResolveAssemblyReference.cache
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Window1.baml
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Window1.g.cs
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\App.g.cs
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test_Content.g.cs
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test_MarkupCompile.cache
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test.g.resources
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test.Properties.Resources.resources
+k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_1\Sqlite_Test\obj\Release\Sqlite_Test.csproj.GenerateResource.Cache
