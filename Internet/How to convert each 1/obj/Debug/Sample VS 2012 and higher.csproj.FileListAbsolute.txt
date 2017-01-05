@@ -1,0 +1,5 @@
+C:\Users\Kamil\Documents\Visual Studio 2015\Samples\How to convert each 1\obj\Debug\Sample VS 2012 and higher.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Visual Studio 2015\Samples\How to convert each 1\bin\Debug\SampleConvert.exe
+C:\Users\Kamil\Documents\Visual Studio 2015\Samples\How to convert each 1\bin\Debug\SampleConvert.pdb
+C:\Users\Kamil\Documents\Visual Studio 2015\Samples\How to convert each 1\obj\Debug\SampleConvert.exe
+C:\Users\Kamil\Documents\Visual Studio 2015\Samples\How to convert each 1\obj\Debug\SampleConvert.pdb

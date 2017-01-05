@@ -36,10 +36,9 @@ namespace SqLite_App
             // Spiewnik.PrintTable();
         }
 
-
-
-
-
-
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Spiewnik.Debug();
+        }
     }
 }
