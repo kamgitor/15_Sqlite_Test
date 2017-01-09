@@ -12,10 +12,12 @@ namespace SqLite_App
 	{
 		static SQLiteConnection m_dbConnection;
 
+/*
 		static private int numer;
 		static private int numer2;
 		static private string nazwa;
 		static private string tekst;
+*/
 
 		// UWAGA
 		// W zapytaniu kazda spacje zamieniac na % i bedzie git - automatycznie pomijanie przecinkow i enterow
@@ -67,10 +69,12 @@ namespace SqLite_App
         // *******************************************************
         static public void Debug()
         {
+
+			/*
 			int num;
 			int num2;
 			string name;
-			string content;
+			string content;*/
 			// CreateSong(1, 2, "Jezusa mam", "Jezusa mam i jestem pewny że\r\nJa na nim nigdy nie zawiodę się");
 
 			ConnectToDatabase();
@@ -78,27 +82,34 @@ namespace SqLite_App
 			//			GetSongByNameMask("%Jesteśmy%", out num, out num2, out name, out content);
 
 
-			GetSongByTekstMask("%JESTEŚMY%");	// , out num, out num2, out name, out content);
 
-/*
-			try
+			/*
+			foreach (Song song in songs)
 			{
-				GetSongByNameMask("%Jestesmy%", out num, out num2, out name, out content);
+				mnmn = song.mId;
 			}
-			catch { }
+			*/
 
-			GetSongByNameMask("%Jeste_my%", out num, out num2, out name, out content);
+			/*
+						try
+						{
+							GetSongByNameMask("%Jestesmy%", out num, out num2, out name, out content);
+						}
+						catch { }
 
-			GetSongByNameMask("%mam%", out num, out num2, out name, out content);
+						GetSongByNameMask("%Jeste_my%", out num, out num2, out name, out content);
 
-			GetSongByTekstMask("%jezusa mam%", out num, out num2, out name, out content);
-			GetSongByTekstMask("%jeste_my%", out num, out num2, out name, out content);
-			GetSongByTekstMask("%jestesmy%", out num, out num2, out name, out content);
-			GetSongByTekstMask("%nim%", out num, out num2, out name, out content);
-			GetSongByTekstMask("%nim i%", out num, out num2, out name, out content);
-			GetSongByTekstMask("%pewny ze ja%", out num, out num2, out name, out content);
-			GetSongByTekstMask("%mam co%", out num, out num2, out name, out content);
-*/
+						GetSongByNameMask("%mam%", out num, out num2, out name, out content);
+
+						GetSongByTekstMask("%jezusa mam%", out num, out num2, out name, out content);
+						GetSongByTekstMask("%jeste_my%", out num, out num2, out name, out content);
+						GetSongByTekstMask("%jestesmy%", out num, out num2, out name, out content);
+						GetSongByTekstMask("%nim%", out num, out num2, out name, out content);
+						GetSongByTekstMask("%nim i%", out num, out num2, out name, out content);
+						GetSongByTekstMask("%pewny ze ja%", out num, out num2, out name, out content);
+						GetSongByTekstMask("%mam co%", out num, out num2, out name, out content);
+			*/
+
 
 
 
@@ -117,38 +128,54 @@ namespace SqLite_App
 
 		// *******************************************************
 		// Musi byc polaczenie z baza
-		static public void GetSongByNumer1(int pos)		// , out int num, out int num2, out string name, out string content)
+		static public List<Song> GetSongByNumber1(int pos)		// , out int num, out int num2, out string name, out string content)
 		{
 			string sql = string.Format("SELECT * FROM Spiewnik WHERE Numer={0}", pos);
 			SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
 			SQLiteDataReader reader = command.ExecuteReader();
-			reader.Read();
 
-			numer = Convert.ToInt32(reader["Numer"]);
-			numer2 = Convert.ToInt32(reader["Numer2"]);
+			List<Song> foundSongs = new List<Song>();
 
-			nazwa = reader["Tytul"].ToString();
-			tekst = reader["Tekst"].ToString();
+			while (reader.Read())
+			{
+				Song song = new Song();
+				song.number1 = Convert.ToInt32(reader["Numer"]);
+				song.number2 = Convert.ToInt32(reader["Numer2"]);
+				song.name = reader["Tytul"].ToString();
+				song.content = reader["Tekst"].ToString();
 
-		}   // GetSongByNumer1
+				foundSongs.Add(song);
+			}
+
+			return foundSongs;
+
+		}   // GetSongByNumber1
 
 
 		// *******************************************************
 		// Musi byc polaczenie z baza
-		static public void GetSongByNumer2(int pos)		// , out int num, out int num2, out string name, out string content)
+		static public List<Song> GetSongByNumber2(int pos)		// , out int num, out int num2, out string name, out string content)
 		{
 			string sql = string.Format("SELECT * FROM Spiewnik WHERE Numer2={0}", pos);
 			SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
 			SQLiteDataReader reader = command.ExecuteReader();
-			reader.Read();
 
-			numer = Convert.ToInt32(reader["Numer"]);
-			numer2 = Convert.ToInt32(reader["Numer2"]);
+			List<Song> foundSongs = new List<Song>();
 
-			nazwa = reader["Tytul"].ToString();
-			tekst = reader["Tekst"].ToString();
+			while (reader.Read())
+			{
+				Song song = new Song();
+				song.number1 = Convert.ToInt32(reader["Numer"]);
+				song.number2 = Convert.ToInt32(reader["Numer2"]);
+				song.name = reader["Tytul"].ToString();
+				song.content = reader["Tekst"].ToString();
 
-		}   // GetSongByNumer2
+				foundSongs.Add(song);
+			}
+
+			return foundSongs;
+
+		}   // GetSongByNumber2
 
 
 		// *******************************************************
@@ -164,28 +191,18 @@ namespace SqLite_App
 			SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
 			SQLiteDataReader reader = command.ExecuteReader();
 
-			//exist = reader.Read();
-
 			List<Song> foundSongs = new List<Song>();
 			
-
-			while(reader.Read())
+			while (reader.Read())
 			{
 				Song song = new Song();
-				song.mId = Convert.ToInt32(reader["Numer"]);
-				song.mName = reader["Tytul"].ToString();
+				song.number1 = Convert.ToInt32(reader["Numer"]);
+				song.number2 = Convert.ToInt32(reader["Numer2"]);
+				song.name = reader["Tytul"].ToString();
+				song.content = reader["Tekst"].ToString();
+
 				foundSongs.Add(song);
 			}
-
-			/*if (exist)
-			{
-				// narazie biore tylko pierwszego z listy
-				numer = Convert.ToInt32(reader["Numer"]);
-				numer2 = Convert.ToInt32(reader["Numer2"]);
-
-				nazwa = reader["Tytul"].ToString();
-				tekst = reader["Tekst"].ToString();
-			}*/
 
 			return foundSongs;
 
@@ -195,10 +212,8 @@ namespace SqLite_App
 		// *******************************************************
 		// w masce % oznacza dowolny ciag znakow
 		// w masce _ oznacza dowolny znak
-		static public bool GetSongByTekstMask(string mask)		// , out int num, out int num2, out string name, out string content)
+		static public List<Song> GetSongByContentMask(string mask)		// , out int num, out int num2, out string name, out string content)
 		{
-			bool exist;
-
 			// SELECT * FROM Spiewnik WHERE Tytul LIKE '%Tobie%'		<- nie uwzglednia wielkosci liter
 			// SELECT * FROM Spiewnik WHERE Tytul GLOB '*Tobie*'		<- uwzglednia wielkosc liter
 
@@ -206,21 +221,36 @@ namespace SqLite_App
 			SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
 			SQLiteDataReader reader = command.ExecuteReader();
 
-			exist = reader.Read();
+			List<Song> foundSongs = new List<Song>();
 
-			if (exist)
+			while (reader.Read())
 			{
-				// narazie biore tylko pierwszego z listy
-				numer = Convert.ToInt32(reader["Numer"]);
-				numer2 = Convert.ToInt32(reader["Numer2"]);
+				Song song = new Song();
+				song.number1 = Convert.ToInt32(reader["Numer"]);
+				song.number2 = Convert.ToInt32(reader["Numer2"]);
+				song.name = reader["Tytul"].ToString();
+				song.content = reader["Tekst"].ToString();
 
-				nazwa = reader["Tytul"].ToString();
-				tekst = reader["Tekst"].ToString();
+				foundSongs.Add(song);
 			}
 
-			return exist;
+			return foundSongs;
 
-		}   // GetSongByTekstMask
+		}   // GetSongByContentMask
+
+
+		// *******************************************************
+		// Zostawia w content mask + troche znakow przed i troche znakow po
+		static public string SimplifyContent(string content, string mask)
+		{
+			string temp;
+
+			temp = content.Replace('\n', ' ');
+			temp = temp.Replace('\r', ' ');
+
+			return temp;
+
+		}   // SimplifyContent
 
 
 		// *******************************************************

@@ -12,3 +12,6 @@ k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Release\SqLite_App
 k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Release\SqLite_App.exe
 k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Release\SqLite_App.pdb
 k:\ProjektyC#\15_Sqlite_Test\Sqlite_Test_3_Kam\SqLite_App\obj\Release\SqLite_App.csprojResolveAssemblyReference.cache
+F:\Robocze\!Visual C#\15_Sqlite_Test\Sqlite_Test\SqLite_App\bin\Release\SqLite_App.exe.config
+F:\Robocze\!Visual C#\15_Sqlite_Test\Sqlite_Test\SqLite_App\obj\Release\SqLite_App.exe
+F:\Robocze\!Visual C#\15_Sqlite_Test\Sqlite_Test\SqLite_App\obj\Release\SqLite_App.pdb

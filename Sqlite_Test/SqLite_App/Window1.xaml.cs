@@ -38,12 +38,77 @@ namespace SqLite_App
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            Spiewnik.Debug();
-			List<Song> songs = Spiewnik.GetSongByNameMask();
-			foreach(Song song in songs)
-			{
-				mnmn = song.mId;
-			}
+			Spiewnik.Debug();
+
         }
-    }
+
+		private void button_Click_Num1(object sender, RoutedEventArgs e)
+		{
+			SongList.Items.Clear();
+			if (InNumber.Text != "")
+			{
+				Spiewnik.ConnectToDatabase();
+				// string content = string.Format("%{0}%", );
+				List<Song> songs = Spiewnik.GetSongByNumber1(Convert.ToInt32(InNumber.Text));      // "%JESTEŚMY%"
+				SongList.Items.Clear();
+				foreach (Song song in songs)
+				{
+					SongList.Items.Add(song.number1.ToString() + " (" + song.number2.ToString() + ")  " + song.name);
+					// SongList.Items.Add(song.name + "  " + song.content);
+				}
+			}
+		}
+
+		private void button_Click_Num2(object sender, RoutedEventArgs e)
+		{
+			SongList.Items.Clear();
+			if (InNumber.Text != "")
+			{
+				Spiewnik.ConnectToDatabase();
+				// string content = string.Format("%{0}%", InNumber.Text);
+				List<Song> songs = Spiewnik.GetSongByNumber2(Convert.ToInt32(InNumber.Text));      // "%JESTEŚMY%"
+
+				foreach (Song song in songs)
+				{
+					SongList.Items.Add(song.number1.ToString() + " (" + song.number2.ToString() + ")  " + song.name);
+					// SongList.Items.Add(song.name + "  " + song.content);
+				}
+			}
+		}
+
+		private void button_Click_Name(object sender, RoutedEventArgs e)
+		{
+			SongList.Items.Clear();
+			if (InName.Text != "")
+			{
+				Spiewnik.ConnectToDatabase();
+				string content = string.Format("%{0}%", InName.Text);
+				List<Song> songs = Spiewnik.GetSongByNameMask(content);      // "%JESTEŚMY%"
+
+				foreach (Song song in songs)
+				{
+					SongList.Items.Add(song.number1.ToString() + " (" + song.number2.ToString() + ")  " + song.name);
+					// SongList.Items.Add(song.name + "  " + song.content);
+				}
+			}
+		}
+
+		private void button_Click_Content(object sender, RoutedEventArgs e)
+		{
+			SongList.Items.Clear();
+			if (InContent.Text != "")
+			{
+				Spiewnik.ConnectToDatabase();
+				string content = string.Format("%{0}%", InContent.Text);
+				List<Song> songs = Spiewnik.GetSongByContentMask(content);      // "%JESTEŚMY%"
+
+				foreach (Song song in songs)
+				{
+
+					song.content = Spiewnik.SimplifyContent(song.content, InContent.Text);
+					SongList.Items.Add(song.number1.ToString() + " (" + song.number2.ToString() + ")  " + song.content);
+				}
+			}
+		}
+	}
 }

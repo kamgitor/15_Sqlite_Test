@@ -7,7 +7,9 @@ namespace SqLite_App
 {
 	public class Song
 	{
-		public int mId;
-		public string mName;
+		public int number1;
+		public int number2;
+		public string name;
+		public string content;
 	}
 }
