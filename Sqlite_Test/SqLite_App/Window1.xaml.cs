@@ -39,6 +39,11 @@ namespace SqLite_App
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             Spiewnik.Debug();
+			List<Song> songs = Spiewnik.GetSongByNameMask();
+			foreach(Song song in songs)
+			{
+				mnmn = song.mId;
+			}
         }
     }
 }

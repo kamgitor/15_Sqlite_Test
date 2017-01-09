@@ -154,9 +154,9 @@ namespace SqLite_App
 		// *******************************************************
 		// w masce % oznacza dowolny ciag znakow
 		// w masce _ oznacza dowolny znak
-		static public bool GetSongByNameMask(string mask)		// , out int num, out int num2, out string name, out string content)
+		static public List<Song> GetSongByNameMask(string mask)		// , out int num, out int num2, out string name, out string content)
 		{
-			bool exist;
+			//bool exist;
 			// SELECT * FROM Spiewnik WHERE Tytul LIKE '%Tobie%'		<- nie uwzglednia wielkosci liter
 			// SELECT * FROM Spiewnik WHERE Tytul GLOB '*Tobie*'		<- uwzglednia wielkosc liter
 
@@ -164,9 +164,20 @@ namespace SqLite_App
 			SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
 			SQLiteDataReader reader = command.ExecuteReader();
 
-			exist = reader.Read();
+			//exist = reader.Read();
 
-			if (exist)
+			List<Song> foundSongs = new List<Song>();
+			
+
+			while(reader.Read())
+			{
+				Song song = new Song();
+				song.mId = Convert.ToInt32(reader["Numer"]);
+				song.mName = reader["Tytul"].ToString();
+				foundSongs.Add(song);
+			}
+
+			/*if (exist)
 			{
 				// narazie biore tylko pierwszego z listy
 				numer = Convert.ToInt32(reader["Numer"]);
@@ -174,9 +185,9 @@ namespace SqLite_App
 
 				nazwa = reader["Tytul"].ToString();
 				tekst = reader["Tekst"].ToString();
-			}
+			}*/
 
-			return exist;
+			return foundSongs;
 
 		}   // GetSongByNameMask
 
