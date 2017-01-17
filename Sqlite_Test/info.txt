@@ -1,3 +1,0 @@
-
-dziala
-wywalalo sie bo widac biblioteka jest 32 bitowa a ten komp mam 64 bitowy a w ustawieniach projektu ylo wybrane ANY (32,64)
